@@ -9,17 +9,17 @@ def control(pos_x, pos_y, time, velocity):
     """ Controls the simulated car"""
     global car_parameters
    
-    if time < 1.5:
+    if time < 1.8:
         car_parameters['throttle'] = 1
                 
-    elif  pos_y > 41.3:
+    elif  pos_y > 41.9:
         #car_parameters['steer'] = 0
         car_parameters['throttle'] = -1
         
-    elif  pos_y > 36.0:
+    elif  pos_y > 36.8:
         car_parameters['steer'] = 40
         
-    elif pos_y > 31.1: 
+    elif pos_y > 33.1: 
         car_parameters['throttle'] = -1
         car_parameters['steer'] = -37
          
